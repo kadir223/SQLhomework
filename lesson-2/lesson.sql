@@ -113,3 +113,6 @@ select 1, 'walpaper', bulkcolumn from openrowset
 
 select * from products
 
+INSERT INTO products
+SELECT 1, 'wallpaper', BulkColumn
+FROM OPENROWSET(BULK '/var/opt/mssql/girl.jpg', SINGLE_BLOB) AS img;
