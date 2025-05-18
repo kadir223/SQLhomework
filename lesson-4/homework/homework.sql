@@ -56,6 +56,8 @@ SELECT Year1,
         else max3
     end as maxvalue_column
 from TestMax
+
+select year1, greatest(max1, max2, max3) as greatest from testmax
 --ALTernative but more complex solution. we use UNPIVOT to make columns as rows and use MAX()
 
 
