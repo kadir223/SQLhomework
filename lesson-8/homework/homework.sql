@@ -24,6 +24,7 @@ VALUES
 (11,'Test Case 11','Passed'),
 (12,'Test Case 12','Passed');
 
+Select * from Groupings;
 -----------------------------------------
 
 -- Task 1: Count Consecutive Values in the Status Field
@@ -76,6 +77,8 @@ VALUES
 	(1027,'Ernst','1980-02-21'),
 	(1116,'Ashish','1990-02-21'),
 	(1225,'Bushan','1997-02-21');
+
+select * from EMPLOYEES_N;
 
 -----------------------------------------
 
