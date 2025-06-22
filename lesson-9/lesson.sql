@@ -70,3 +70,15 @@ ORDER BY Position;
 
 
 
+--test 
+
+;with numbers as (
+    select 1 as num, 1 as cum_freq
+    union ALL
+    select num+1, cum_freq + num +1
+    from numbers
+    where num<15
+)
+select num, cum_freq
+from numbers
+order by num
